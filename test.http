@@ -1,0 +1,6 @@
+POST http://localhost:3000/create-spreadsheet
+Content-Type: application/json
+
+{
+    "key": "tatakae"
+}
