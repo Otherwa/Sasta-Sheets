@@ -77,7 +77,7 @@ app.post('/create-spreadsheet', async (req, res) => {
         const values = jsonData.data.map(item => [item.label, item.timestamp, item.present]);
         await sheets.spreadsheets.values.update({
             spreadsheetId,
-            range: 'Sheet1!A2:B', // Start from A2
+            range: 'Sheet1!A2:C', // Start from A2
             valueInputOption: 'RAW',
             requestBody: {
                 values: values // No need to include header again
